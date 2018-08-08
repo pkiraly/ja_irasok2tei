@@ -16,6 +16,18 @@ Jelen project egy "qqq-kódolással" készült MS Word (.docx) állományból Pe
 
 A program alapértelmezésben a Maven könyvtárában keresi a Saxon-t, de ezt a bash szkriptekben át lehet irni.
 
+## Előkészületek
+
+A .docx állomány egy zippel tömöritett könyvtárrendszer, amiben külön-külön félokban található a főszöveg, a jegyzetek, stiluslapok stb.
+
+Első lépésben ki kell csomagolni a fájlt a `wordxml` könyvtárba:
+
+```
+unzip 2012-04-29-JA.docx -d wordxml
+```
+
+
+
 ## Futtatás
 
 Word -> TEI konverzió:
